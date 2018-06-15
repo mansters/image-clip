@@ -1,0 +1,34 @@
+{
+  "name": "image-clip",
+  "version": "1.0.0",
+  "description": "A plugin for cropping images, using canvas to convert cropped images to base64.",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "build": "npx webpack --config ./config/webpack.prod.js",
+    "start": "webpack-dev-server --open --config ./config/webpack.dev.js"
+  },
+  "keywords": ["canvas", "image", "clip", "web"],
+  "author": "Manster",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "babel-loader": "^8.0.0-beta.2",
+    "lodash": "^4.17.10"
+  }
+}
